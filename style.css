@@ -1,0 +1,47 @@
+*{
+    margin: 0 auto;
+}
+.a{
+    height: 85px;
+    width: 500px;
+    text-align: center;
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    border-radius: 40px;
+    background-color: #a365dd;
+    font-size: 50px;
+    color: #eee; 
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.max-width {
+    max-width: 500px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 0%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 8px #fff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#spanRelogio{
+    font-size: 180px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img{
+    background-color: red;
+}
+
+.hour{
+    background-color: rgb(255, 255, 255);
+    font-size:60px;
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>con</title>
+    <script>
+        //horario
+        function showtime() {
+            var time = new Date ()
+            var hour = time.getHours ()
+            var minute = time.getMinutes ()
+            var second = time.getSeconds ()
+
+            if(hour<10) hour = "0"+hour
+            if(minute<10) minute = "0"+minute
+            if(second<10) second = "0"+second
+            var tempo = hour+":"+minute+":"+second
+
+            document.getElementById("timer").innerHTML=tempo
+        }
+        function initTime() {
+            setInterval(showtime, 1000)
+        }
+    </script>
+</head>
+<body onload="initTime()">
+    <label class='hour'></label>
+        <span class="hour" id="timer">horas</span>
+        
+            <div class="max-width">
+                <img src="img.png" alt="" class="img">
+                <button class="a" id="btn" onClick="relogio(event)" target="_blank">Começar</button>
+                <span id="spanRelogio"></span>
+            </div>
+        </div>
+</body>
+</html>
